@@ -1,4 +1,6 @@
 export default function InstructorSection() {
+  const instructorImg = `${import.meta.env.BASE_URL}Jalal_Arabic_instructor.jpg`;
+  
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,7 +10,7 @@ export default function InstructorSection() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-gold to-dark-green rounded-2xl blur-3xl opacity-20"></div>
               <img
-                src={`${import.meta.env.BASE_URL}Jalal_Arabic_instructor.jpg`}
+                src={instructorImg}
                 alt="Jalal Ali - Certified Arabic Instructor"
                 className="relative w-full max-w-md rounded-2xl shadow-2xl object-cover"
               />

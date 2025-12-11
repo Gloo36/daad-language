@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import { CheckCircle, Book, Users, Award } from "lucide-react";
 
 export default function About() {
+  const instructorImg = `${import.meta.env.BASE_URL}Jalal_Arabic_instructor.jpg`;
+  
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
@@ -27,7 +29,7 @@ export default function About() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold to-dark-green rounded-2xl blur-3xl opacity-20"></div>
                 <img
-                  src={`${import.meta.env.BASE_URL}Jalal_Arabic_instructor.jpg`}
+                  src={instructorImg}
                   alt="Jalal Ali - Arabic Instructor"
                   className="relative w-full max-w-md rounded-2xl shadow-2xl object-cover"
                 />

@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
+  const bgImageUrl = `${import.meta.env.BASE_URL}background_at_top_of_page.jpg`;
+  
   return (
     <section className="relative min-h-screen overflow-hidden flex items-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{ 
-          backgroundImage: `url('${import.meta.env.BASE_URL}background_at_top_of_page.jpg')`,
+          backgroundImage: `url('${bgImageUrl}')`,
           backgroundPosition: 'right center',
         }}
       />
